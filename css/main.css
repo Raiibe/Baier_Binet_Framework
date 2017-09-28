@@ -354,3 +354,42 @@ kbd {
 	color: black;
 	cursor: pointer;
 }
+
+/*******************************************************************************/
+/*       			  	    	      <li> & <ul> elements                             */
+/*******************************************************************************/
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background-color: #31353a;
+	justify-content: flex-start;
+	margin:0;
+	flex-basis: 20vw;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.navbar > li {
+	list-style: none;
+}
+.navbar > li > a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	text-align: center;
+	margin: 0;
+}
+.navbar > li > a:hover {
+	background-color: #212428;
+}
+
+.navbar > li >.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	color : grey;
+}
+
+.navbar > li >.active {
+	background-color: #656e82;
+}
