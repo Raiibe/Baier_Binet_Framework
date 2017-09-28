@@ -315,3 +315,27 @@ kbd {
   flex-shrink: 1;
   margin-left: 2px;
 }
+
+/*******************************************************************************/
+/*       						         	      Alerts					                           */
+/*******************************************************************************/
+
+.alert {
+	color : white;
+	background-color: red;
+	padding: 10px;
+	margin: 2px;
+	font-size: 1.2rem;
+}
+
+.success {
+	background-color: green;
+}
+
+.info {
+	background-color: blue;
+}
+
+.warning {
+	background-color: orange;
+}
