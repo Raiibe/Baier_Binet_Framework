@@ -1,6 +1,6 @@
 /* https://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 }
 h1 {
-  font-size: 4rem;
+	font-size: 4rem;
 	font-weight: bold;
 }
 h2 {
@@ -277,43 +277,43 @@ kbd {
 /*                     Flex grid (total columns = 6)                           */
 /*******************************************************************************/
 .row {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .flex-1 {
-  flex-basis: calc(1/6*100% - 7*2px);
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-left: 2px;
+	flex-basis: calc(1/6*100% - 7*2px);
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-left: 2px;
 }
 
 .flex-2 {
-  flex-basis: calc(2/6*100% - 6*2px);
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-left: 2px;
+	flex-basis: calc(2/6*100% - 6*2px);
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-left: 2px;
 }
 
 .flex-3 {
-  flex-basis: calc(3/6*100% - 5*2px);
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-left: 2px;
+	flex-basis: calc(3/6*100% - 5*2px);
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-left: 2px;
 }
 
 .flex-4 {
-  flex-basis: calc(4/6*100% - 4*2px);
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-left: 2px;
+	flex-basis: calc(4/6*100% - 4*2px);
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-left: 2px;
 }
 
 .flex-5 {
-  flex-basis: calc(5/6*100% - 3*2px);
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-left: 2px;
+	flex-basis: calc(5/6*100% - 3*2px);
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-left: 2px;
 }
 
 /*******************************************************************************/
@@ -326,6 +326,7 @@ kbd {
 	padding: 10px;
 	margin: 2px;
 	font-size: 1.2rem;
+	border-radius: 10px;
 }
 
 .success {
@@ -355,27 +356,79 @@ kbd {
 }
 
 /*******************************************************************************/
-/*       						         	      Navbar					                           */
+/*       			  	    	      <li> & <ul> elements                             */
 /*******************************************************************************/
-.navbar {
+ul.navbar {
 	display: flex;
-	list-style: none;
-  flex-direction: row;
-  background-color: lightgrey;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navbar > li {
-	margin: 0;
+	flex-direction: row;
+	background-color: #31353a;
+	justify-content: flex-start;
+	margin:0;
+	flex-basis: 20vw;
 	flex-grow: 1;
 	flex-shrink: 1;
-	padding: 0.5rem 0;
-	text-align: center;
-	border: 1px solid darkgrey;
-	list-style-type: none;
 }
 
-.navbar > li > a {
+ul.navbar > li {
+	list-style: none;
+}
+ul.navbar > li > a {
+	display: block;
 	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	text-align: center;
+	margin: 0;
+}
+ul.navbar > li > a:hover {
+	background-color: #212428;
+}
+
+ul.navbar > li >.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	color : grey;
+}
+
+ul.navbar > li >.active {
+	background-color: #656e82;
+}
+
+ul.breadcrumb {
+	display: flex;
+	flex-direction: row;
+	background-color: gainsboro;
+	justify-content: flex-start;
+	flex-basis: 20vw;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 5px;
+	margin: 2px;
+}
+
+ul.breadcrumb > li {
+	list-style: none;
+}
+
+ul.breadcrumb > li > a {
+	display: inline;
+	text-decoration: none;
+	color: blue;
+	padding: 10px 50px;
+	text-align: center;
+	margin: 0;
+}
+
+ul.breadcrumb > li > a:hover{
+	text-decoration: underline;
+}
+
+ul.breadcrumb > li >.active {
+	pointer-events: none;
+	color : black;
+	font-weight: bold;
+}
+
+ul.breadcrumb li+li:before {
+	content: "-";
 }
