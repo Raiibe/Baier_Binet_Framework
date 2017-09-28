@@ -358,7 +358,7 @@ kbd {
 /*******************************************************************************/
 /*       			  	    	      <li> & <ul> elements                             */
 /*******************************************************************************/
-.navbar {
+ul.navbar {
 	display: flex;
 	flex-direction: row;
 	background-color: #31353a;
@@ -369,10 +369,10 @@ kbd {
 	flex-shrink: 1;
 }
 
-.navbar > li {
+ul.navbar > li {
 	list-style: none;
 }
-.navbar > li > a {
+ul.navbar > li > a {
 	display: block;
 	text-decoration: none;
 	color: white;
@@ -380,16 +380,55 @@ kbd {
 	text-align: center;
 	margin: 0;
 }
-.navbar > li > a:hover {
+ul.navbar > li > a:hover {
 	background-color: #212428;
 }
 
-.navbar > li >.disabled {
+ul.navbar > li >.disabled {
 	pointer-events: none;
 	cursor: not-allowed;
 	color : grey;
 }
 
-.navbar > li >.active {
+ul.navbar > li >.active {
 	background-color: #656e82;
+}
+
+ul.breadcrumb {
+	display: flex;
+	flex-direction: row;
+	background-color: gainsboro;
+	justify-content: flex-start;
+	flex-basis: 20vw;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 5px;
+	margin: 2px;
+}
+
+ul.breadcrumb > li {
+	list-style: none;
+}
+
+ul.breadcrumb > li > a {
+	display: inline;
+	text-decoration: none;
+	color: blue;
+	padding: 10px 50px;
+	text-align: center;
+	margin: 0;
+}
+
+ul.breadcrumb > li > a:hover{
+	text-decoration: underline;
+}
+
+ul.breadcrumb > li >.active {
+	pointer-events: none;
+	color : black;
+	font-weight: bold;
+}
+
+ul.breadcrumb li+li:before {
+	content: "-";
 }
