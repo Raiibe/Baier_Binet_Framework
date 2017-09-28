@@ -49,7 +49,7 @@ table {
 
 
 /*******************************************************************************/
-/*                               My style                                      */
+/*                               Typography                                    */
 /*******************************************************************************/
 body {
 	margin: 0 10px;
@@ -183,4 +183,93 @@ kbd {
 }
 .hoverlines tr:hover {
 	opacity: 0.5;
+}
+
+/*******************************************************************************/
+/*                                Buttons                                      */
+/*******************************************************************************/
+.btn {
+	font-size: 1rem;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: lightgrey;
+	color: black;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: white;
+}
+.btn:active {
+	background-color: darkgrey;
+}
+
+.btn-small {
+	font-size: 0.8rem;
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+}
+.btn-large {
+	font-size: 1.2rem;
+	padding: 0.7rem 1.5rem;
+	border-radius: 6px;
+}
+
+.btn-blue {
+	background-color: #1350BD;
+	color: white;
+	text-shadow:0 0 1px black;
+}
+.btn-blue:hover {
+	background-color: blue;
+}
+.btn-blue:active {
+	background-color: darkblue;
+}
+
+.btn-red {
+	background-color: red;
+	color: white;
+}
+.btn-red:hover {
+	background-color: #E20401;
+}
+.btn-red:active {
+	background-color: darkred;
+}
+
+.btn-green {
+	background-color: green;
+	color: white;
+	text-shadow:0 0 1px black;
+}
+.btn-green:hover {
+	background-color: #03A612;
+}
+.btn-green:active {
+	background-color: darkgreen;
+}
+
+.btn-flat {
+	border: none;
+	border-radius: 0;
+}
+.btn-flat:hover {
+	background-color: lightgrey;
+}
+.btn-flat:active {
+	background-color: darkgrey;
+}
+
+.btn-xlarge {
+	width: 100%;
+}
+
+.btn-fancy {
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	background-image: linear-gradient(#D3D3D3, #A9A9A9);
+}
+.btn-fancy:active {
+	transform: translateY(4px);
 }
