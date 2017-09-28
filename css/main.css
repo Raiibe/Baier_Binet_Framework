@@ -1,0 +1,186 @@
+/* https://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*******************************************************************************/
+/*                               My style                                      */
+/*******************************************************************************/
+body {
+	margin: 0 10px;
+	font-family: "Times new Roman", Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+}
+h1 {
+  font-size: 4rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.8rem;
+}
+h5 {
+	font-size: 1.5rem;
+}
+h6 {
+	font-size: 1.2rem;
+}
+small {
+	color: grey;
+	font-size: 0.7em;
+}
+.subtitle {
+	/* a voir */
+}
+p {
+	margin-bottom: 10px;
+}
+mark {
+	background-color: yellow;
+}
+del {
+	text-decoration: line-through red;
+}
+ins {
+	color: red;
+	text-decoration: underline;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+.l-align {
+	text-align: left;
+}
+.r-align {
+	text-align: right;
+}
+.c-align {
+	text-align: center;
+}
+.j-align {
+	text-align: justify;
+}
+.inMaj {
+	text-transform: uppercase;
+}
+.inMin {
+	text-transform: lowercase;
+}
+ul > li {
+	margin-left: 50px;
+	list-style-type: upper-roman;
+}
+.style-square > li {
+	list-style-type: square;
+}
+.style-none > li {
+	list-style-type: none;
+}
+blockquote {
+	padding: 0 10rem;
+	font-style: oblique;
+}
+code {
+	display: inline-block;
+	padding-right: 2rem;
+	font-family: Courier, monospace;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: lightgrey;
+	white-space: pre;
+	box-shadow: -2px 2px 5px #888888;
+}
+pre {
+	display: inline-block;
+	padding-right: 2rem;
+	padding-top: 20px;
+	font-family: Consolas, monospace;
+	border: 1px solid darkgrey;
+	border-radius: 5px;
+	border-left: 1rem solid #f25e23;
+	border-right: 1rem solid #f25e23;
+	color: #F5F5F5;
+	background-color: #272822;
+	box-shadow: -2px 2px 5px black;
+}
+kbd {
+	font-family: monospace;
+}
+.table {
+	border: 1px solid black;
+}
+.table th {
+	background-color: lightgrey;
+	border-bottom: 1px solid black;
+}
+.table th, .table td {
+	padding: 5px;
+}
+.altLines tr:nth-child(2n+1) {
+	background-color: lightblue;
+}
+.altLines tr:nth-child(2n+2) {
+	background-color: #E8E8E8;
+}
+.borders th, .borders td {
+	border: 1px solid black;
+}
+.hoverlines tr:hover {
+	opacity: 0.5;
+}
