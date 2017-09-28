@@ -353,3 +353,29 @@ kbd {
 	color: black;
 	cursor: pointer;
 }
+
+/*******************************************************************************/
+/*       						         	      Navbar					                           */
+/*******************************************************************************/
+.navbar {
+	display: flex;
+	list-style: none;
+  flex-direction: row;
+  background-color: lightgrey;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar > li {
+	margin: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 0.5rem 0;
+	text-align: center;
+	border: 1px solid darkgrey;
+	list-style-type: none;
+}
+
+.navbar > li > a {
+	text-decoration: none;
+}
