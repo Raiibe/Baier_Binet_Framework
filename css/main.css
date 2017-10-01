@@ -432,3 +432,42 @@ ul.breadcrumb > li >.active {
 ul.breadcrumb li+li:before {
 	content: "-";
 }
+
+.page_nav {
+	display: block;
+	text-align: center;
+}
+
+.pagination {
+	display: inline-flex;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.pagination > li {
+	display: inline-block;
+	height: auto;
+	margin: 0;
+	padding: 0.55rem 0 0.5rem 0;
+	list-style: none;
+}
+
+.pagination > li:nth-child(1n+2) {
+	border-left: 1px solid grey;
+}
+
+.pagination > li > a {
+	color: black;
+	padding: 0.5rem;
+	text-decoration: none;
+}
+
+.pagination > li > .active {
+	background-color: lightgrey;
+}
+
+.pagination > li > .disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	color: grey;
+}
