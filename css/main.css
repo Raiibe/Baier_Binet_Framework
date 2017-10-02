@@ -433,11 +433,6 @@ ul.breadcrumb li+li:before {
 	content: "-";
 }
 
-.page_nav {
-	display: block;
-	text-align: center;
-}
-
 .pagination {
 	display: inline-flex;
 	border: 1px solid grey;
