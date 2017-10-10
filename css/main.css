@@ -78,12 +78,9 @@ h5 {
 h6 {
 	font-size: 1.2rem;
 }
-small {
+small, .subtitle {
 	color: grey;
 	font-size: 0.7em;
-}
-.subtitle {
-	/* a voir */
 }
 p {
 	margin-bottom: 10px;
