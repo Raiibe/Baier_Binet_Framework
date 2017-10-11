@@ -75,10 +75,10 @@
 	border-radius: 0;
 }
 .btn-flat:hover {
-	background-color: lightgrey;
+	background-color: lighten($btn-bg-color, 10);
 }
 .btn-flat:active {
-	background-color: darkgrey;
+	background-color: darken($btn-bg-color, 10);
 }
 
 .btn-xlarge {

@@ -247,10 +247,10 @@ kbd {
   border-radius: 0; }
 
 .btn-flat:hover {
-  background-color: lightgrey; }
+  background-color: #ededed; }
 
 .btn-flat:active {
-  background-color: darkgrey; }
+  background-color: #bababa; }
 
 .btn-xlarge {
   width: 100%; }
