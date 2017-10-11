@@ -181,7 +181,7 @@ kbd {
 /*******************************************************************************/
 /*                                Buttons                                      */
 /*******************************************************************************/
-.btn {
+.btn, .btn-small, .btn-large, .btn-blue, .btn-red, .btn-green, .btn-flat, .btn-xlarge, .btn-fancy {
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -191,10 +191,10 @@ kbd {
   color: black;
   cursor: pointer; }
 
-.btn:hover {
+.btn:hover, .btn-small:hover, .btn-large:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-flat:hover, .btn-xlarge:hover, .btn-fancy:hover {
   background-color: white; }
 
-.btn:active {
+.btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active {
   background-color: darkgrey; }
 
 .btn-small {
