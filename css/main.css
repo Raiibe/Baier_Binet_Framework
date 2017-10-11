@@ -184,7 +184,7 @@ kbd {
 /*******************************************************************************/
 /*                                Buttons                                      */
 /*******************************************************************************/
-.btn, .btn-small, .btn-large, .btn-blue, .btn-red, .btn-green, .btn-flat, .btn-xlarge, .btn-fancy {
+.btn, .btn-small, .btn-large, .btn-blue, .btn-red, .btn-green, .btn-flat, .btn-xlarge, .btn-fancy, .btn-3d {
   font-size: 1rem;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -194,10 +194,10 @@ kbd {
   color: black;
   cursor: pointer; }
 
-.btn:hover, .btn-small:hover, .btn-large:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-flat:hover, .btn-xlarge:hover, .btn-fancy:hover {
+.btn:hover, .btn-small:hover, .btn-large:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-flat:hover, .btn-xlarge:hover, .btn-fancy:hover, .btn-3d:hover {
   background-color: #ededed; }
 
-.btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active {
+.btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active, .btn-3d:active {
   background-color: #bababa; }
 
 .btn-small {
@@ -261,6 +261,12 @@ kbd {
 
 .btn-fancy:active {
   transform: translateY(4px); }
+
+.btn-3d {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); }
+
+.btn-3d:active {
+  transform: translate3d(4px, 4px, 0px); }
 
 /*******************************************************************************/
 /*       			  	    	      <ul> & <li> elements                             */

@@ -94,3 +94,11 @@
 .btn-fancy:active {
 	transform: translateY(4px);
 }
+
+.btn-3d {
+	@extend .btn;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+.btn-3d:active {
+	transform: translate3d(4px, 4px, 0px);
+}
