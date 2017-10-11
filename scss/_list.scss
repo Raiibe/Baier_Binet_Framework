@@ -1,0 +1,111 @@
+/*******************************************************************************/
+/*       			  	    	      <ul> & <li> elements                             */
+/*******************************************************************************/
+ul.navbar {
+	display: flex;
+	flex-direction: row;
+	background-color: #31353a;
+	justify-content: flex-start;
+	margin:0;
+	flex-basis: 20vw;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+ul.navbar > li {
+	list-style: none;
+}
+ul.navbar > li > a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	text-align: center;
+	margin: 0;
+}
+ul.navbar > li > a:hover {
+	background-color: #212428;
+}
+
+ul.navbar > li >.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	color : grey;
+}
+
+ul.navbar > li >.active {
+	background-color: #656e82;
+}
+
+ul.breadcrumb {
+	display: flex;
+	flex-direction: row;
+	background-color: gainsboro;
+	justify-content: flex-start;
+	flex-basis: 20vw;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 5px;
+	margin: 2px;
+}
+
+ul.breadcrumb > li {
+	list-style: none;
+}
+
+ul.breadcrumb > li > a {
+	display: inline;
+	text-decoration: none;
+	color: blue;
+	padding: 10px 50px;
+	text-align: center;
+	margin: 0;
+}
+
+ul.breadcrumb > li > a:hover{
+	text-decoration: underline;
+}
+
+ul.breadcrumb > li >.active {
+	pointer-events: none;
+	color : black;
+	font-weight: bold;
+}
+
+ul.breadcrumb li+li:before {
+	content: "-";
+}
+
+.pagination {
+	display: inline-flex;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.pagination > li {
+	display: inline-block;
+	height: auto;
+	margin: 0;
+	padding: 0.55rem 0 0.5rem 0;
+	list-style: none;
+}
+
+.pagination > li:nth-child(1n+2) {
+	border-left: 1px solid grey;
+}
+
+.pagination > li > a {
+	color: black;
+	padding: 0.5rem;
+	text-decoration: none;
+}
+
+.pagination > li > .active {
+	background-color: lightgrey;
+}
+
+.pagination > li > .disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	color: grey;
+}
