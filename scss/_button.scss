@@ -1,6 +1,42 @@
 /*******************************************************************************/
 /*                                Buttons                                      */
 /*******************************************************************************/
+@mixin button-struct($btn-width, $btn-height, $btn-radius) {
+  width: $btn-width;
+  height: $btn-height;
+  border-radius: $btn-radius;
+}
+@mixin button-text($btn-f-family, $btn-f-color, $btn-f-size, $btn-f-weight, $btn-text-decoration, $btn-text-align) {
+  font-family: $btn-f-family;
+  color: $btn-f-color;
+  font-size: $btn-f-size;
+  font-weight: $btn-f-weight;
+  text-decoration: $btn-text-decoration;
+  text-align: $btn-text-align;
+}
+
+@mixin button-style($btn-bg-img, $btn-bg-color, $btn-border, $btn-shadow, $btn-active-transform, $btn-active-transition) {
+  background-color: $btn-bg-color;
+  background-image: $btn-bg-img;
+  border: $btn-border;
+  box-shadow: $btn-shadow;
+
+  &:hover {
+    background-color: darken($btn-bg-color, 10%);
+  }
+  &:active {
+    background-color: darken($btn-bg-color, 20%);
+    transform: $btn-active-transform;
+    transition: $btn-active-transition;
+  }
+}
+/* Used to create a default button */
+@mixin button (){
+  @include button-struct(10em, 5em, 5px);
+  @include button-text( inherit, black, 1em, normal, none, center);
+  @include button-style( none, white, solid black 1px, none, none , all 0.3s ease);
+}
+
 .btn {
 	font-size: 1rem;
 	text-align: center;
