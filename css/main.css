@@ -395,7 +395,7 @@ ul.breadcrumb li + li:before {
 /*******************************************************************************/
 /*       						         	      Alerts					                           */
 /*******************************************************************************/
-.alert {
+.alert, .alert-success, .alert-info, .alert-warning {
   color: white;
   background-color: red;
   padding: 10px;
@@ -403,13 +403,13 @@ ul.breadcrumb li + li:before {
   font-size: 1.2rem;
   border-radius: 10px; }
 
-.success {
+.alert-success {
   background-color: green; }
 
-.info {
+.alert-info {
   background-color: blue; }
 
-.warning {
+.alert-warning {
   background-color: orange; }
 
 .closealert {
