@@ -7,15 +7,15 @@
 	padding: 0.5rem 1rem;
 	border: 1px solid grey;
 	border-radius: 5px;
-	background-color: lightgrey;
-	color: black;
+	background-color: $btn-bg-color;
+	color: $btn-font-color;
 	cursor: pointer;
 }
 .btn:hover {
-	background-color: white;
+	background-color: lighten($btn-bg-color, 10);
 }
 .btn:active {
-	background-color: darkgrey;
+	background-color: darken($btn-bg-color, 10);
 }
 
 .btn-small {
@@ -38,10 +38,10 @@
 	text-shadow:0 0 1px black;
 }
 .btn-blue:hover {
-	background-color: blue;
+	background-color: lighten($btn-blue-bg-color, 10);
 }
 .btn-blue:active {
-	background-color: darkblue;
+	background-color: darken($btn-blue-bg-color, 10);
 }
 
 .btn-red {
@@ -50,10 +50,10 @@
 	color: white;
 }
 .btn-red:hover {
-	background-color: #E20401;
+	background-color: lighten($btn-red-bg-color, 10);
 }
 .btn-red:active {
-	background-color: darkred;
+	background-color: darken($btn-red-bg-color, 10);
 }
 
 .btn-green {
@@ -63,10 +63,10 @@
 	text-shadow:0 0 1px black;
 }
 .btn-green:hover {
-	background-color: #03A612;
+	background-color: lighten($btn-green-bg-color, 10);
 }
 .btn-green:active {
-	background-color: darkgreen;
+	background-color: darken($btn-green-bg-color, 10);
 }
 
 .btn-flat {

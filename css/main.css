@@ -1,3 +1,6 @@
+/*
+ * Buttons
+ */
 /* https://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -192,10 +195,10 @@ kbd {
   cursor: pointer; }
 
 .btn:hover, .btn-small:hover, .btn-large:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-flat:hover, .btn-xlarge:hover, .btn-fancy:hover {
-  background-color: white; }
+  background-color: #ededed; }
 
 .btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active {
-  background-color: darkgrey; }
+  background-color: #bababa; }
 
 .btn-small {
   font-size: 0.8rem;
@@ -213,20 +216,20 @@ kbd {
   text-shadow: 0 0 1px black; }
 
 .btn-blue:hover {
-  background-color: blue; }
+  background-color: #3333ff; }
 
 .btn-blue:active {
-  background-color: darkblue; }
+  background-color: #0000cc; }
 
 .btn-red {
   background-color: red;
   color: white; }
 
 .btn-red:hover {
-  background-color: #E20401; }
+  background-color: #ff3333; }
 
 .btn-red:active {
-  background-color: darkred; }
+  background-color: #cc0000; }
 
 .btn-green {
   background-color: green;
@@ -234,10 +237,10 @@ kbd {
   text-shadow: 0 0 1px black; }
 
 .btn-green:hover {
-  background-color: #03A612; }
+  background-color: #00b300; }
 
 .btn-green:active {
-  background-color: darkgreen; }
+  background-color: #004d00; }
 
 .btn-flat {
   border: none;
