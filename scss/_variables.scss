@@ -3,23 +3,34 @@
 * '-s' stands for small button, '-m' for medium and '-l' for large
 */
 
+// Button - Structure
+// width
+$btn-width: auto;
+$btn-height: auto;
+
+// padding - firts value is top/bottom padding - second value is left/right padding
+$btn-p-s: 0.2rem 0.5rem;
+$btn-p-m: 0.5rem 1rem;
+$btn-p-l: 0.7rem 1.5rem;
+
 // Button - Text
 // font family
 $btn-f-family: inherit;
 
 // font color
-$btn-f-color: black;
+$btn-f-color-dark: black;
+$btn-f-color-light: white;
 
 // font size
-$btn-f-size-s : 0.8rem;
-$btn-f-size-m : 1rem;
-$btn-f-size-l : 1.2rem;
+$btn-f-size-s: 0.8rem;
+$btn-f-size-m: 1rem;
+$btn-f-size-l: 1.2rem;
 
 // font weight
 $btn-f-weight: normal;
 
 // text decoration
-$btn-text-decoration: inherit;
+$btn-text-decoration: none;
 
 // text align
 $btn-text-align: center;
@@ -33,10 +44,15 @@ $btn-bg-color-1: white;
 $btn-bg-color-2: black;
 $btn-bg-color-3: red;
 $btn-bg-color-4: green;
-$btn-bg-color-5: blue;
+$btn-bg-color-5: #1350BD; // blue
 
 // border
-$btn-border: solid lightgrey 1px;
+$btn-border: solid grey 1px;
+
+// border-radius
+$btn-br-s: 4px;
+$btn-br-m: 5px;
+$btn-br-l: 6px;
 
 // shadow
 $btn-shadow: none;
@@ -45,4 +61,4 @@ $btn-shadow: none;
 $btn-active-transform: none;
 
 // transition while active (clicked)
-$btn-active-transition: none;
+$btn-active-transition: all 0.3s ease;

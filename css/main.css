@@ -1,6 +1,7 @@
 /*
- * Buttons
- */
+* Buttons :
+* '-s' stands for small button, '-m' for medium and '-l' for large
+*/
 /* https://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -184,90 +185,7 @@ kbd {
 /*******************************************************************************/
 /*                                Buttons                                      */
 /*******************************************************************************/
-.btn, .btn-small, .btn-large, .btn-blue, .btn-red, .btn-green, .btn-flat, .btn-xlarge, .btn-fancy, .btn-3d {
-  font-size: 1rem;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  border: 1px solid grey;
-  border-radius: 5px;
-  background-color: lightgrey;
-  color: black;
-  cursor: pointer; }
-
-.btn:hover, .btn-small:hover, .btn-large:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-flat:hover, .btn-xlarge:hover, .btn-fancy:hover, .btn-3d:hover {
-  background-color: #ededed; }
-
-.btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active, .btn-3d:active {
-  background-color: #bababa; }
-
-.btn-small {
-  font-size: 0.8rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px; }
-
-.btn-large {
-  font-size: 1.2rem;
-  padding: 0.7rem 1.5rem;
-  border-radius: 6px; }
-
-.btn-blue {
-  background-color: #1350BD;
-  color: white;
-  text-shadow: 0 0 1px black; }
-
-.btn-blue:hover {
-  background-color: #3333ff; }
-
-.btn-blue:active {
-  background-color: #0000cc; }
-
-.btn-red {
-  background-color: red;
-  color: white; }
-
-.btn-red:hover {
-  background-color: #ff3333; }
-
-.btn-red:active {
-  background-color: #cc0000; }
-
-.btn-green {
-  background-color: green;
-  color: white;
-  text-shadow: 0 0 1px black; }
-
-.btn-green:hover {
-  background-color: #00b300; }
-
-.btn-green:active {
-  background-color: #004d00; }
-
-.btn-flat {
-  border: none;
-  border-radius: 0; }
-
-.btn-flat:hover {
-  background-color: #ededed; }
-
-.btn-flat:active {
-  background-color: #bababa; }
-
-.btn-xlarge {
-  width: 100%; }
-
-.btn-fancy {
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(#D3D3D3, #A9A9A9); }
-
-.btn-fancy:active {
-  transform: translateY(4px); }
-
-.btn-3d {
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); }
-
-.btn-3d:active {
-  transform: translate3d(4px, 4px, 0px); }
-
+/* Used to create a default button */
 /*******************************************************************************/
 /*       			  	    	      <ul> & <li> elements                             */
 /*******************************************************************************/
@@ -432,5 +350,149 @@ ul.breadcrumb li + li:before {
 .closealert:hover {
   color: black;
   cursor: pointer; }
+
+/*******************************************************************************/
+/*                                Buttons                                      */
+/*******************************************************************************/
+.btn, .btn-small, .btn-large, .btn-blue, .btn-red, .btn-green, .btn-flat, .btn-xlarge, .btn-fancy, .btn-3d {
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  background-image: none;
+  border: solid grey 1px;
+  box-shadow: none;
+  color: black;
+  background-color: white;
+  /*font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: $btn-bg-color;
+  color: $btn-font-color;*/
+  cursor: pointer; }
+  .btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active, .btn-3d:active {
+    transform: none;
+    transition: all 0.3s ease; }
+  .btn:hover, .btn-small:hover, .btn-large:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-flat:hover, .btn-xlarge:hover, .btn-fancy:hover, .btn-3d:hover {
+    background-color: #e6e6e6; }
+  .btn:active, .btn-small:active, .btn-large:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-flat:active, .btn-xlarge:active, .btn-fancy:active, .btn-3d:active {
+    background-color: #cccccc; }
+
+/*.btn:hover {
+	background-color: lighten($btn-bg-color, 10);
+}
+.btn:active {
+	background-color: darken($btn-bg-color, 10);
+}*/
+.btn-small {
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  /*font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;*/ }
+
+.btn-large {
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  /*font-size: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;*/ }
+
+.btn-blue {
+  color: white;
+  background-color: #1350BD;
+  /*background-color: #1350BD;
+	color: white;
+	text-shadow:0 0 1px black;*/ }
+  .btn-blue:hover {
+    background-color: #0e3c8f; }
+  .btn-blue:active {
+    background-color: #0a2960; }
+
+.btn-red {
+  color: white;
+  background-color: red;
+  /*background-color: red;
+  color: white;*/ }
+  .btn-red:hover {
+    background-color: #cc0000; }
+  .btn-red:active {
+    background-color: #990000; }
+
+.btn-green {
+  color: white;
+  background-color: green;
+  /*background-color: green;
+  color: white;
+  text-shadow:0 0 1px black;*/ }
+  .btn-green:hover {
+    background-color: #004d00; }
+  .btn-green:active {
+    background-color: #001a00; }
+
+.btn-flat {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  color: black;
+  background-color: lightgrey;
+  /*border: none;
+  border-radius: 0;*/ }
+  .btn-flat:active {
+    transform: none;
+    transition: all 0.3s ease; }
+  .btn-flat:hover {
+    background-color: #bababa; }
+  .btn-flat:active {
+    background-color: #a0a0a0; }
+
+.btn-xlarge {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; }
+
+.btn-fancy {
+  background-image: linear-gradient(#D3D3D3, #A9A9A9);
+  border: solid grey 1px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  /*box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(#D3D3D3, #A9A9A9);*/ }
+  .btn-fancy:active {
+    transform: translateY(4px);
+    transition: all 0.3s ease; }
+
+.btn-3d {
+  background-image: none;
+  border: solid grey 1px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); }
+  .btn-3d:active {
+    transform: translate3d(4px, 4px, 0);
+    transition: all 0.3s ease; }
 
 /*# sourceMappingURL=main.css.map */

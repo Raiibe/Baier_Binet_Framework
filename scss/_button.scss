@@ -1,140 +1,47 @@
 /*******************************************************************************/
 /*                                Buttons                                      */
 /*******************************************************************************/
-@mixin button-struct($btn-width, $btn-height, $btn-radius) {
+@mixin button-struct($btn-width, $btn-height, $btn-radius, $btn-p) {
   width: $btn-width;
   height: $btn-height;
   border-radius: $btn-radius;
+  padding: $btn-p;
 }
-@mixin button-text($btn-f-family, $btn-f-color, $btn-f-size, $btn-f-weight, $btn-text-decoration, $btn-text-align) {
+@mixin button-text($btn-f-family, $btn-f-size, $btn-f-weight, $btn-text-decoration, $btn-text-align) {
   font-family: $btn-f-family;
-  color: $btn-f-color;
   font-size: $btn-f-size;
   font-weight: $btn-f-weight;
   text-decoration: $btn-text-decoration;
   text-align: $btn-text-align;
 }
 
-@mixin button-style($btn-bg-img, $btn-bg-color, $btn-border, $btn-shadow, $btn-active-transform, $btn-active-transition) {
-  background-color: $btn-bg-color;
+@mixin button-style($btn-bg-img, $btn-border, $btn-shadow, $btn-active-transform, $btn-active-transition) {
   background-image: $btn-bg-img;
   border: $btn-border;
   box-shadow: $btn-shadow;
+
+  &:active {
+    transform: $btn-active-transform;
+    transition: $btn-active-transition;
+  }
+}
+
+@mixin button-color($btn-color, $btn-bg-color) {
+  color: $btn-color;
+  background-color: $btn-bg-color;
 
   &:hover {
     background-color: darken($btn-bg-color, 10%);
   }
   &:active {
     background-color: darken($btn-bg-color, 20%);
-    transform: $btn-active-transform;
-    transition: $btn-active-transition;
   }
 }
+
 /* Used to create a default button */
 @mixin button (){
-  @include button-struct(10em, 5em, 5px);
-  @include button-text( inherit, black, 1em, normal, none, center);
-  @include button-style( none, white, solid black 1px, none, none , all 0.3s ease);
-}
-
-.btn {
-	font-size: 1rem;
-	text-align: center;
-	padding: 0.5rem 1rem;
-	border: 1px solid grey;
-	border-radius: 5px;
-	background-color: $btn-bg-color;
-	color: $btn-font-color;
-	cursor: pointer;
-}
-.btn:hover {
-	background-color: lighten($btn-bg-color, 10);
-}
-.btn:active {
-	background-color: darken($btn-bg-color, 10);
-}
-
-.btn-small {
-	@extend .btn;
-	font-size: 0.8rem;
-	padding: 0.2rem 0.5rem;
-	border-radius: 4px;
-}
-.btn-large {
-	@extend .btn;
-	font-size: 1.2rem;
-	padding: 0.7rem 1.5rem;
-	border-radius: 6px;
-}
-
-.btn-blue {
-	@extend .btn;
-	background-color: #1350BD;
-	color: white;
-	text-shadow:0 0 1px black;
-}
-.btn-blue:hover {
-	background-color: lighten($btn-blue-bg-color, 10);
-}
-.btn-blue:active {
-	background-color: darken($btn-blue-bg-color, 10);
-}
-
-.btn-red {
-	@extend .btn;
-	background-color: red;
-	color: white;
-}
-.btn-red:hover {
-	background-color: lighten($btn-red-bg-color, 10);
-}
-.btn-red:active {
-	background-color: darken($btn-red-bg-color, 10);
-}
-
-.btn-green {
-	@extend .btn;
-	background-color: green;
-	color: white;
-	text-shadow:0 0 1px black;
-}
-.btn-green:hover {
-	background-color: lighten($btn-green-bg-color, 10);
-}
-.btn-green:active {
-	background-color: darken($btn-green-bg-color, 10);
-}
-
-.btn-flat {
-	@extend .btn;
-	border: none;
-	border-radius: 0;
-}
-.btn-flat:hover {
-	background-color: lighten($btn-bg-color, 10);
-}
-.btn-flat:active {
-	background-color: darken($btn-bg-color, 10);
-}
-
-.btn-xlarge {
-	@extend .btn;
-	width: 100%;
-}
-
-.btn-fancy {
-	@extend .btn;
-	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-	background-image: linear-gradient(#D3D3D3, #A9A9A9);
-}
-.btn-fancy:active {
-	transform: translateY(4px);
-}
-
-.btn-3d {
-	@extend .btn;
-	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-}
-.btn-3d:active {
-	transform: translate3d(4px, 4px, 0px);
+  @include button-struct($btn-width, $btn-height, $btn-br-m, $btn-p-m);
+  @include button-text($btn-f-family, $btn-f-size-m, $btn-f-weight, $btn-text-decoration, $btn-text-align);
+  @include button-style($btn-bg-img, $btn-border, $btn-shadow, $btn-active-transform, $btn-active-transition);
+  @include button-color($btn-f-color-dark, $btn-bg-color-1);
 }
