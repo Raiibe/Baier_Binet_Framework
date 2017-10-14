@@ -1,41 +1,44 @@
 /*******************************************************************************/
 /*       						         	      Alerts					                           */
 /*******************************************************************************/
-
-.alert {
-	color : white;
-	background-color: red;
-	padding: 10px;
-	margin: 2px;
-	font-size: 1.2rem;
-	border-radius: 10px;
+@mixin alert-struct($alt-width, $alt-height, $alt-radius, $alt-p, $alt-margin) {
+  width: $alt-width;
+  height: $alt-height;
+  border-radius: $alt-radius;
+  padding: $alt-p;
+	margin: $alt-margin;
 }
 
-.alert-success {
-	@extend .alert;
-	background-color: green;
+@mixin alert-text($alt-f-family, $alt-f-size, $alt-f-weight, $alt-text-decoration, $alt-text-align) {
+  font-family: $alt-f-family;
+  font-size: $alt-f-size;
+  font-weight: $alt-f-weight;
+  text-decoration: $alt-text-decoration;
+  text-align: $alt-text-align;
 }
 
-.alert-info {
-	@extend .alert;
-	background-color: blue;
+@mixin alert-color ($alt-color, $alt-bg-color) {
+	color: $alt-color;
+	background-color: $alt-bg-color;
 }
 
-.alert-warning {
-	@extend .alert;
-	background-color: orange;
+@mixin alert-close () {
+	font-family: $alt-close-f-family;
+	font-size: $alt-close-f-size;
+	color: $alt-close-f-color;
+	transition: $alt-close-transition;
+	float: $alt-close-float;
+	line-height: $alt-close-lh;
+
+	&:hover {
+		color: darken($alt-close-f-color, 100%);
+		cursor: $alt-close-cursor;
+	}
 }
 
-.closealert {
-	font-family: Arial, Verdana, sans-serif;
-	font-size: 3rem;
-	color: white;
-	transition: 0.5s;
-	float: right;
-	line-height: 1.5rem;
-}
-
-.closealert:hover {
-	color: black;
-	cursor: pointer;
+/* Used to create a default alert */
+@mixin alert () {
+	@include alert-struct($alt-width, $alt-height, $alt-br, $alt-p, $alt-margin);
+	@include alert-text($alt-f-family, $alt-f-size, $alt-f-weight, $alt-text-decoration, $alt-text-align);
+	@include alert-color($alt-f-color-light, $alt-bg-color-default);
 }

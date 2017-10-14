@@ -6,7 +6,9 @@
   height: $btn-height;
   border-radius: $btn-radius;
   padding: $btn-p;
+  cursor: $btn-cursor;
 }
+
 @mixin button-text($btn-f-family, $btn-f-size, $btn-f-weight, $btn-text-decoration, $btn-text-align) {
   font-family: $btn-f-family;
   font-size: $btn-f-size;

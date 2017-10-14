@@ -4,7 +4,7 @@
 */
 
 // Button - Structure
-// width
+// width & height
 $btn-width: auto;
 $btn-height: auto;
 
@@ -12,6 +12,9 @@ $btn-height: auto;
 $btn-p-s: 0.2rem 0.5rem;
 $btn-p-m: 0.5rem 1rem;
 $btn-p-l: 0.7rem 1.5rem;
+
+// cursor
+$btn-cursor: pointer;
 
 // Button - Text
 // font family
@@ -62,3 +65,55 @@ $btn-active-transform: none;
 
 // transition while active (clicked)
 $btn-active-transition: all 0.3s ease;
+
+
+
+
+// Alert - Structure
+// width & height
+$alt-width: auto;
+$alt-height: auto;
+
+// border-radius
+$alt-br: 10px;
+
+// padding
+$alt-p: 10px;
+
+// margin
+$alt-margin: 2px;
+
+// Alert - Text
+// font family
+$alt-f-family: inherit;
+
+// font size
+$alt-f-size: 1.2rem;
+
+// font weight
+$alt-f-weight: normal;
+
+// text decoration
+$alt-text-decoration: none;
+
+// text text align
+$alt-text-align: inherit;
+
+// font color
+$alt-f-color-dark: black;
+$alt-f-color-light: white;
+
+// background color
+$alt-bg-color-default: red;
+$alt-bg-color-success: green;
+$alt-bg-color-info: blue;
+$alt-bg-color-warning: orange;
+
+// Alert - close
+$alt-close-f-family: Arial, Verdana, sans-serif;
+$alt-close-f-size: 3rem;
+$alt-close-transition: 0.5s;
+$alt-close-float: right;
+$alt-close-lh: 1.5rem;
+$alt-close-f-color: white;
+$alt-close-cursor: pointer;

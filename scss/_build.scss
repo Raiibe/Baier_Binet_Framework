@@ -3,60 +3,33 @@
 /*******************************************************************************/
 .btn {
   @include button();
-	/*font-size: 1rem;
-	text-align: center;
-	padding: 0.5rem 1rem;
-	border: 1px solid grey;
-	border-radius: 5px;
-	background-color: $btn-bg-color;
-	color: $btn-font-color;*/
-	cursor: pointer;
 }
-/*.btn:hover {
-	background-color: lighten($btn-bg-color, 10);
-}
-.btn:active {
-	background-color: darken($btn-bg-color, 10);
-}*/
 
 .btn-small {
 	@extend .btn;
   @include button-struct($btn-width, $btn-height, $btn-br-s, $btn-p-s);
   @include button-text($btn-f-family, $btn-f-size-s, $btn-f-weight, $btn-text-decoration, $btn-text-align);
-	/*font-size: 0.8rem;
-	padding: 0.2rem 0.5rem;
-	border-radius: 4px;*/
 }
+
 .btn-large {
 	@extend .btn;
   @include button-struct($btn-width, $btn-height, $btn-br-l, $btn-p-l);
   @include button-text($btn-f-family, $btn-f-size-l, $btn-f-weight, $btn-text-decoration, $btn-text-align);
-	/*font-size: 1.2rem;
-	padding: 0.7rem 1.5rem;
-	border-radius: 6px;*/
 }
 
 .btn-blue {
 	@extend .btn;
   @include button-color($btn-f-color-light, $btn-bg-color-5);
-  /*background-color: #1350BD;
-	color: white;
-	text-shadow:0 0 1px black;*/
 }
 
 .btn-red {
 	@extend .btn;
   @include button-color($btn-f-color-light, $btn-bg-color-3);
-	/*background-color: red;
-	color: white;*/
 }
 
 .btn-green {
 	@extend .btn;
   @include button-color($btn-f-color-light, $btn-bg-color-4);
-	/*background-color: green;
-	color: white;
-	text-shadow:0 0 1px black;*/
 }
 
 .btn-flat {
@@ -64,25 +37,45 @@
   @include button-struct($btn-width, $btn-height, 0, $btn-p-m);
   @include button-style($btn-bg-img, none, $btn-shadow, $btn-active-transform, $btn-active-transition);
   @include button-color($btn-f-color-dark, lightgrey);
-	/*border: none;
-	border-radius: 0;*/
 }
 
 .btn-xlarge {
 	@extend .btn;
   @include button-struct(100%, $btn-height, $btn-br-m, $btn-p-m);
-	//width: 100%;
 }
 
 .btn-fancy {
 	@extend .btn;
   @include button-style(linear-gradient(#D3D3D3, #A9A9A9), $btn-border, -1px 2px 5px 1px rgba(0, 0, 0, 0.7), translateY(4px), $btn-active-transition);
-	/*box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-	background-image: linear-gradient(#D3D3D3, #A9A9A9);*/
 }
 
 .btn-3d {
 	@extend .btn;
   @include button-style($btn-bg-img, $btn-border, -1px 2px 5px 1px rgba(0, 0, 0, 0.7), translate3d(4px, 4px, 0), $btn-active-transition);
-	//box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/*******************************************************************************/
+/*       						         	      Alerts					                           */
+/*******************************************************************************/
+.alert {
+  @include alert();
+}
+
+.alert-success {
+	@extend .alert;
+  @include alert-color($alt-f-color-light, $alt-bg-color-success);
+}
+
+.alert-info {
+	@extend .alert;
+  @include alert-color($alt-f-color-light, $alt-bg-color-info);
+}
+
+.alert-warning {
+	@extend .alert;
+	@include alert-color($alt-f-color-light, $alt-bg-color-warning);
+}
+
+.close-alert {
+	@include alert-close();
 }
