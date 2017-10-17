@@ -252,7 +252,7 @@ ul.breadcrumb > li > .active {
   font-weight: bold; }
 
 ul.breadcrumb li + li:before {
-  content: "-"; }
+  content: "/"; }
 
 ul.pagination {
   display: inline-flex;
