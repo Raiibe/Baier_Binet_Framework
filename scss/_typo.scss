@@ -2,7 +2,7 @@
 /*                               Typography                                    */
 /*******************************************************************************/
 body {
-	font-family: "Times new Roman", Arial, Helvetica, sans-serif;
+	font-family: $font-family;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 10px;
