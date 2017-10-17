@@ -27,13 +27,13 @@ ul.navbar > li > a:hover {
 	background-color: #212428;
 }
 
-ul.navbar > li >.disabled {
+ul.navbar > li > .disabled {
 	pointer-events: none;
 	cursor: not-allowed;
-	color : grey;
+	color: grey;
 }
 
-ul.navbar > li >.active {
+ul.navbar > li > .active {
 	background-color: #656e82;
 }
 
@@ -76,13 +76,13 @@ ul.breadcrumb li+li:before {
 	content: "-";
 }
 
-.pagination {
+ul.pagination {
 	display: inline-flex;
 	border: 1px solid grey;
 	border-radius: 5px;
 }
 
-.pagination > li {
+ul.pagination > li {
 	display: inline-block;
 	height: auto;
 	margin: 0;
@@ -90,21 +90,21 @@ ul.breadcrumb li+li:before {
 	list-style: none;
 }
 
-.pagination > li:nth-child(1n+2) {
+ul.pagination > li:nth-child(1n+2) {
 	border-left: 1px solid grey;
 }
 
-.pagination > li > a {
+ul.pagination > li > a {
 	color: black;
 	padding: 0.5rem;
 	text-decoration: none;
 }
 
-.pagination > li > .active {
+ul.pagination > li > .active {
 	background-color: lightgrey;
 }
 
-.pagination > li > .disabled {
+ul.pagination > li > .disabled {
 	pointer-events: none;
 	cursor: not-allowed;
 	color: grey;
