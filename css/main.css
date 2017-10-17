@@ -200,7 +200,8 @@ ul.navbar {
   flex-shrink: 1; }
 
 ul.navbar > li {
-  list-style: none; }
+  list-style: none;
+  margin: 0; }
 
 ul.navbar > li > a {
   display: block;
