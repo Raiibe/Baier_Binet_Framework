@@ -20,7 +20,29 @@
     <li><a href="grid.html"> Grid </a> </li>
     <li><a href="list.html"> Lists elements </a> </li>
   </ul>
-
+  <h5> Flex Grid </h5>
+  <p>
+    Our framework a 12 collumn grid. To build the grid you need to define a row, and put many collumn in it. <br>
+    There is 12 css classes : flex-1 to flex-12. For exemple flex-5 take 5 of 12 collumns of the grid.
+    <br><br>
+    The code :
+    <pre><xmp>
+      <div class="row">
+        <div class="flex-2"> size 2 </div>
+        <div class="flex-3"> size 3 </div>
+        <div class="flex-7"> size 7 </div>
+      </div>
+    </xmp></pre>
+    <br><br>
+    Display the following elements :
+    <div class="row">
+      <div class="flex-2"> size 2 </div>
+      <div class="flex-3"> size 3 </div>
+      <div class="flex-7"> size 7 </div>
+    </div>
+  </p>
+  <br><br>
+  Others exemples of grid uses :
   <div class="row">
     <div class="flex-1"> 1 </div>
     <div class="flex-1"> 2 </div>
@@ -40,8 +62,6 @@
     <div class="flex-2"> size 2 </div>
     <div class="flex-3"> size 3 </div>
     <div class="flex-4"> size 4 </div>
-
-
   </div>
 
   <div class="row">
@@ -69,18 +89,36 @@
   <div class="row">
     <div class="flex-11"> size 11 </div>
   </div>
-  
- <h5> Flex auto </h5>
+  <br>
+  <h5> Automatic flex </h5>
+  <p>
+    Our framework also implement an automated grid. To use it, you need to define a row and put many collumns in it. <br>
+    The css class flex-auto will grow our shrink to fill the row's width. <br>
+    If you put 2 flex-auto in 1 row, each element will take half of the width. If you place 4 of them, they will take each quarter.
+    <br><br>
+    The code :
+    <pre><xmp>
+      <div class="row">
+        <div class="flex-auto"> a third </div>
+        <div class="flex-auto"> a third </div>
+        <div class="flex-auto"> a third </div>
+      </div>
+    </xmp></pre>
+    <br><br>
+    Display the following elements :
+    <div class="row">
+      <div class="flex-auto"> a third </div>
+      <div class="flex-auto"> a third </div>
+      <div class="flex-auto"> a third </div>
+    </div>
+  </p>
+  <br><br>
+  Other exemples of automatic grid :
   <div class="row">
     <div class="flex-auto"> auto 1/2 </div>
     <div class="flex-auto"> auto 1/2 </div>
   </div>
 
-  <div class="row">
-    <div class="flex-auto"> auto 1/3 </div>
-    <div class="flex-auto"> auto 1/3 </div>
-    <div class="flex-auto"> auto 1/3 </div>
-  </div>
 
   <div class="row">
     <div class="flex-auto"> auto 1/4 </div>
