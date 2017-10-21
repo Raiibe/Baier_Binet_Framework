@@ -84,7 +84,7 @@ small, .subtitle {
   font-size: 0.7em; }
 
 p {
-  margin-bottom: 10px; }
+  margin: 1rem 2rem; }
 
 mark {
   background-color: yellow; }
@@ -122,7 +122,7 @@ em {
 
 ul > li {
   margin-left: 50px;
-  list-style-type: upper-roman; }
+  list-style-type: disc; }
 
 .style-square > li {
   list-style-type: square; }
@@ -136,7 +136,7 @@ blockquote {
 
 code {
   display: inline-block;
-  padding-right: 2rem;
+  padding: 0.5rem;
   font-family: Courier, monospace;
   border: 1px solid grey;
   border-radius: 5px;
@@ -161,7 +161,8 @@ kbd {
   font-family: monospace; }
 
 .table {
-  border: 1px solid black; }
+  border: 1px solid black;
+  margin: 1rem 2rem; }
 
 .table th {
   background-color: lightgrey;
@@ -170,10 +171,10 @@ kbd {
 .table th, .table td {
   padding: 5px; }
 
-.altLines tr:nth-child(2n+1) {
+.alt_lines tr:nth-child(2n+1) {
   background-color: lightblue; }
 
-.altLines tr:nth-child(2n+2) {
+.alt_lines tr:nth-child(2n+2) {
   background-color: #E8E8E8; }
 
 .borders th, .borders td {
