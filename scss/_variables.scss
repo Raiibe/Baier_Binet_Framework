@@ -120,3 +120,98 @@ $alt-close-float: right;
 $alt-close-lh: 1.5rem;
 $alt-close-f-color: white;
 $alt-close-cursor: pointer;
+
+// Grid - Structure
+// total columns
+$numcols: 12;
+
+// display
+$flex_display: flex;
+
+// flex-direction
+$flex_direction: row;
+
+// box-sizing
+$box_sizing: border-box;
+
+// flex-basis
+$flex_basis: 20px;
+
+// flex-grow
+$flex_grow: 1;
+
+// flex-shrink
+$flex_shrink: 1;
+
+// margin
+$margin_flex: 2px 0 0 1%;
+
+// padding
+$padding_flex: 5px;
+
+// background-color
+$background_flex: lightblue;
+
+// List - Structure
+// Navbar
+// display
+$nav_display: flex;
+
+// flex-direction
+$nav_flex_dir: row;
+
+// background-color
+$nav_bg: #31353a;
+
+// justify-content
+$nav_justify: flex-start;
+
+// margin
+$nav_margin: 0;
+
+// flex-basis
+$nav_basis: 20vw;
+
+// flex-grow
+$nav_grow: 1;
+
+// flex-shrink
+$nav_shrink: 1;
+
+// Breadcrumb
+// display
+$bread_display: flex;
+
+// flex-direction
+$bread_flex_dir: row;
+
+// background-color
+$bread_bg: gainsboro;
+
+// justify-content
+$bread_justify: flex-start;
+
+// margin
+$bread_margin: 2px;
+
+// padding
+$bread_pd: 5px;
+
+// flex-basis
+$bread_basis: 20vw;
+
+// flex-grow
+$bread_grow: 1;
+
+// flex-shrink
+$bread_shrink: 1;
+
+// Pagination
+// display
+$pag_display: inline-flex;
+
+// border
+$pag_border: 1px solid grey;
+
+// border-radius
+$pag_br: 5px;

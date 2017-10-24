@@ -1,113 +1,115 @@
 /*******************************************************************************/
-/*       			  	    	      <ul> & <li> elements                             */
+/*       			  	   	  <ul> & <li> elements                             */
 /*******************************************************************************/
-ul.navbar {
-	display: flex;
-	flex-direction: row;
-	background-color: #31353a;
-	justify-content: flex-start;
-	margin:0;
-	flex-basis: 20vw;
-	flex-grow: 1;
-	flex-shrink: 1;
+@mixin navbar() {
+	display: $nav_display;
+	flex-direction: $nav_flex_dir;
+	background-color: $nav_bg;
+	justify-content: $nav_justify;
+	margin: $nav_margin;
+	flex-basis: $nav_basis;
+	flex-grow: $nav_grow;
+	flex-shrink: $nav_shrink;
+
+	& > li {
+		list-style: none;
+		margin: 0;
+	}
+
+	& > li > a {
+		display: block;
+		text-decoration: none;
+		color: white;
+		padding: 10px 50px;
+		text-align: center;
+		margin: 0;
+		border-left: #222222 2px solid;
+	}
+
+	& > li > a:hover {
+		background-color: #212428;
+	}
+
+	& > li > .disabled {
+		pointer-events: none;
+		cursor: not-allowed;
+		color: grey;
+	}
+
+	& > li > .active {
+		background-color: #656e82;
+	}
 }
 
-ul.navbar > li {
-	list-style: none;
-	margin: 0;
-}
-ul.navbar > li > a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	padding: 10px 50px;
-	text-align: center;
-	margin: 0;
-	border-left: #222222 2px solid;
-}
-ul.navbar > li > a:hover {
-	background-color: #212428;
+@mixin breadcrumb() {
+	display: $bread_display;
+	flex-direction: $bread_flex_dir;
+	background-color: $bread_bg;
+	justify-content: $bread_justify;
+	flex-basis: $bread_basis;
+	flex-grow: $bread_grow;
+	flex-shrink: $bread_shrink;
+	padding: $bread_pd;
+	margin: $bread_margin;
+
+	& > li {
+		list-style: none;
+	}
+
+	& > li > a {
+		display: inline;
+		text-decoration: none;
+		color: blue;
+		padding: 10px 50px;
+		text-align: center;
+		margin: 0;
+	}
+
+	& > li > a:hover{
+		text-decoration: underline;
+	}
+
+	& > li >.active {
+		pointer-events: none;
+		color : black;
+		font-weight: bold;
+	}
+
+	& li+li:before {
+		content: "/";
+	}
 }
 
-ul.navbar > li > .disabled {
-	pointer-events: none;
-	cursor: not-allowed;
-	color: grey;
-}
+@mixin pagination() {
+	display: $pag_display;
+	border: $pag_border;
+	border-radius: $pag_br;
 
-ul.navbar > li > .active {
-	background-color: #656e82;
-}
+	& > li {
+		display: inline-block;
+		height: auto;
+		margin: 0;
+		padding: 0.55rem 0 0.5rem 0;
+		list-style: none;
+	}
 
-ul.breadcrumb {
-	display: flex;
-	flex-direction: row;
-	background-color: gainsboro;
-	justify-content: flex-start;
-	flex-basis: 20vw;
-	flex-grow: 1;
-	flex-shrink: 1;
-	padding: 5px;
-	margin: 2px;
-}
+	& > li:nth-child(1n+2) {
+		border-left: 1px solid grey;
+	}
 
-ul.breadcrumb > li {
-	list-style: none;
-}
+	& > li > a {
+		color: black;
+		padding: 0.5rem;
+		text-decoration: none;
+	}
 
-ul.breadcrumb > li > a {
-	display: inline;
-	text-decoration: none;
-	color: blue;
-	padding: 10px 50px;
-	text-align: center;
-	margin: 0;
-}
+	& > li > .active {
+		background-color: lightgrey;
+	}
 
-ul.breadcrumb > li > a:hover{
-	text-decoration: underline;
-}
-
-ul.breadcrumb > li >.active {
-	pointer-events: none;
-	color : black;
-	font-weight: bold;
-}
-
-ul.breadcrumb li+li:before {
-	content: "/";
-}
-
-ul.pagination {
-	display: inline-flex;
-	border: 1px solid grey;
-	border-radius: 5px;
-}
-
-ul.pagination > li {
-	display: inline-block;
-	height: auto;
-	margin: 0;
-	padding: 0.55rem 0 0.5rem 0;
-	list-style: none;
-}
-
-ul.pagination > li:nth-child(1n+2) {
-	border-left: 1px solid grey;
-}
-
-ul.pagination > li > a {
-	color: black;
-	padding: 0.5rem;
-	text-decoration: none;
-}
-
-ul.pagination > li > .active {
-	background-color: lightgrey;
-}
-
-ul.pagination > li > .disabled {
-	pointer-events: none;
-	cursor: not-allowed;
-	color: grey;
+	& > li > .disabled {
+		pointer-events: none;
+		cursor: not-allowed;
+		color: grey;
+	}
 }
