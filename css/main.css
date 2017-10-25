@@ -490,31 +490,37 @@ ul.navbar {
   flex-shrink: 1; }
   @media screen and (max-width: 50rem) {
     ul.navbar {
-      flex-direction: column;
-      border-left: none; } }
+      flex-direction: column; } }
   @media screen and (orientation: portrait) {
     ul.navbar {
-      flex-direction: column;
-      border: none; } }
+      flex-direction: column; } }
   ul.navbar > li {
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    width: 20%; }
+    @media screen and (max-width: 50rem) {
+      ul.navbar > li {
+        width: 100%; } }
+    @media screen and (orientation: portrait) {
+      ul.navbar > li {
+        width: 100%; } }
+  ul.navbar > li:nth-child(n+2) {
+    border-left: #222222 2px solid; }
+    @media screen and (max-width: 50rem) {
+      ul.navbar > li:nth-child(n+2) {
+        border-left: none;
+        border-top: #222222 2px solid; } }
+    @media screen and (orientation: portrait) {
+      ul.navbar > li:nth-child(n+2) {
+        border-left: none;
+        border-top: #222222 2px solid; } }
   ul.navbar > li > a {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 10px 5vw;
+    padding: 10px 0;
     text-align: center;
-    margin: 0;
-    border-left: #222222 2px solid; }
-    @media screen and (max-width: 50rem) {
-      ul.navbar > li > a {
-        border-left: none;
-        border-bottom: #222222 2px solid; } }
-    @media screen and (orientation: portrait) {
-      ul.navbar > li > a {
-        border-left: none;
-        border-bottom: #222222 2px solid; } }
+    margin: 0; }
   ul.navbar > li > a:hover {
     background-color: #212428; }
   ul.navbar > li > .disabled {
@@ -535,12 +541,13 @@ ul.breadcrumb {
   padding: 5px;
   margin: 2px; }
   ul.breadcrumb > li {
-    list-style: none; }
+    list-style: none;
+    margin: 0; }
   ul.breadcrumb > li > a {
     display: inline;
     text-decoration: none;
     color: blue;
-    padding: 10px 50px;
+    padding: 10px 2vw;
     text-align: center;
     margin: 0; }
   ul.breadcrumb > li > a:hover {
@@ -562,7 +569,7 @@ ul.pagination {
     margin: 0;
     padding: 0.55rem 0 0.5rem 0;
     list-style: none; }
-  ul.pagination > li:nth-child(1n+2) {
+  ul.pagination > li:nth-child(n+2) {
     border-left: 1px solid grey; }
   ul.pagination > li > a {
     color: black;
