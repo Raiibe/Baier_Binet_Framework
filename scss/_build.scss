@@ -95,20 +95,13 @@
 /*       						     List					                   */
 /*******************************************************************************/
 ul.navbar {
-  @include navbar();
+  @include navbar($nav_display, $nav_flex_dir, $nav_bg, $nav_justify, $nav_margin, $nav_basis, $nav_grow, $nav_shrink);
 }
 
 ul.breadcrumb {
-  @include breadcrumb();
+  @include breadcrumb($bread_display, $bread_flex_dir, $bread_bg, $bread_justify, $bread_basis, $bread_grow, $bread_shrink, $bread_pd, $bread_margin);
 }
 
 ul.pagination {
-  @include pagination();
-}
-
-/*******************************************************************************/
-/*       						     Typo					                   */
-/*******************************************************************************/
-body {
-  font-family: $font-family;
+  @include pagination($pag_display, $pag_border, $pag_br);
 }

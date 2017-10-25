@@ -1,15 +1,15 @@
 /*******************************************************************************/
 /*       			  	   	  <ul> & <li> elements                             */
 /*******************************************************************************/
-@mixin navbar() {
-	display: $nav_display;
-	flex-direction: $nav_flex_dir;
-	background-color: $nav_bg;
-	justify-content: $nav_justify;
-	margin: $nav_margin;
-	flex-basis: $nav_basis;
-	flex-grow: $nav_grow;
-	flex-shrink: $nav_shrink;
+@mixin navbar($nav-display, $nav-dir, $nav-bg, $nav-j, $nav-m, $nav-basis, $nav-grow, $nav-shrink) {
+	display: $nav-display;
+	flex-direction: $nav-dir;
+	background-color: $nav-bg;
+	justify-content: $nav-j;
+	margin: $nav-m;
+	flex-basis: $nav-basis;
+	flex-grow: $nav-grow;
+	flex-shrink: $nav-shrink;
 
 	& > li {
 		list-style: none;
@@ -41,16 +41,16 @@
 	}
 }
 
-@mixin breadcrumb() {
-	display: $bread_display;
-	flex-direction: $bread_flex_dir;
-	background-color: $bread_bg;
-	justify-content: $bread_justify;
-	flex-basis: $bread_basis;
-	flex-grow: $bread_grow;
-	flex-shrink: $bread_shrink;
-	padding: $bread_pd;
-	margin: $bread_margin;
+@mixin breadcrumb($b-dis, $b-dir, $b-bg, $b-j, $b-basis, $b-grow, $b-shrink, $b-pd, $b-m) {
+	display: $b-dis;
+	flex-direction: $b-dir;
+	background-color: $b-bg;
+	justify-content: $b-j;
+	flex-basis: $b-basis;
+	flex-grow: $b-grow;
+	flex-shrink: $b-shrink;
+	padding: $b-pd;
+	margin: $b-m;
 
 	& > li {
 		list-style: none;
@@ -80,10 +80,10 @@
 	}
 }
 
-@mixin pagination() {
-	display: $pag_display;
-	border: $pag_border;
-	border-radius: $pag_br;
+@mixin pagination($p-display, $p-border, $p-br) {
+	display: $p-display;
+	border: $p-border;
+	border-radius: $p-br;
 
 	& > li {
 		display: inline-block;
