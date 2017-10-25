@@ -35,7 +35,7 @@ small, .subtitle {
 	font-size: 0.7em;
 }
 p {
-	margin: 1rem 2rem;
+	margin: 0;
 }
 mark {
 	background-color: yellow;
@@ -133,4 +133,9 @@ kbd {
 }
 .hoverlines tr:hover {
 	opacity: 0.5;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }

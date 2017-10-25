@@ -86,7 +86,7 @@ small, .subtitle {
   font-size: 0.7em; }
 
 p {
-  margin: 1rem 2rem; }
+  margin: 0; }
 
 mark {
   background-color: yellow; }
@@ -185,6 +185,10 @@ kbd {
 .hoverlines tr:hover {
   opacity: 0.5; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 /*******************************************************************************/
 /*                                Buttons                                      */
 /*******************************************************************************/
@@ -202,7 +206,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-2 {
   box-sizing: border-box;
@@ -211,7 +215,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-3 {
   box-sizing: border-box;
@@ -220,7 +224,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-4 {
   box-sizing: border-box;
@@ -229,7 +233,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-5 {
   box-sizing: border-box;
@@ -238,7 +242,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-6 {
   box-sizing: border-box;
@@ -247,7 +251,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-7 {
   box-sizing: border-box;
@@ -256,7 +260,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-8 {
   box-sizing: border-box;
@@ -265,7 +269,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-9 {
   box-sizing: border-box;
@@ -274,7 +278,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-10 {
   box-sizing: border-box;
@@ -283,7 +287,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 .flex-11 {
   box-sizing: border-box;
@@ -292,7 +296,7 @@ kbd {
   flex-shrink: 0;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 /*******************************************************************************/
 /*       						         	      Alerts					                           */
@@ -470,7 +474,7 @@ kbd {
   flex-shrink: 1;
   margin: 2px 0 0 1%;
   padding: 5px;
-  background-color: lightblue; }
+  background-color: white; }
 
 /*******************************************************************************/
 /*       						     List					                   */
