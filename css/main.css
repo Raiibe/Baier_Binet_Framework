@@ -202,7 +202,7 @@ img {
 /*******************************************************************************/
 .flex-1 {
   box-sizing: border-box;
-  flex-basis: 7.3333333333%;
+  flex-basis: 7.33333%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -211,7 +211,7 @@ img {
 
 .flex-2 {
   box-sizing: border-box;
-  flex-basis: 15.6666666667%;
+  flex-basis: 15.66667%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -229,7 +229,7 @@ img {
 
 .flex-4 {
   box-sizing: border-box;
-  flex-basis: 32.3333333333%;
+  flex-basis: 32.33333%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -238,7 +238,7 @@ img {
 
 .flex-5 {
   box-sizing: border-box;
-  flex-basis: 40.6666666667%;
+  flex-basis: 40.66667%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -256,7 +256,7 @@ img {
 
 .flex-7 {
   box-sizing: border-box;
-  flex-basis: 57.3333333333%;
+  flex-basis: 57.33333%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -265,7 +265,7 @@ img {
 
 .flex-8 {
   box-sizing: border-box;
-  flex-basis: 65.6666666667%;
+  flex-basis: 65.66667%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -283,7 +283,7 @@ img {
 
 .flex-10 {
   box-sizing: border-box;
-  flex-basis: 82.3333333333%;
+  flex-basis: 82.33333%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -292,7 +292,7 @@ img {
 
 .flex-11 {
   box-sizing: border-box;
-  flex-basis: 90.6666666667%;
+  flex-basis: 90.66667%;
   flex-grow: 0;
   flex-shrink: 0;
   margin: 2px 0 0 1%;
@@ -568,7 +568,7 @@ ul.pagination {
     display: inline-block;
     height: auto;
     margin: 0;
-    padding: 0.55rem 0 0.5rem 0;
+    padding: 0.55rem 0;
     list-style: none; }
   ul.pagination > li:nth-child(n+2) {
     border-left: 1px solid grey; }
