@@ -9,5 +9,4 @@ It has several appearance and layout rules of different HTML elements such as bu
 For more information see https://baier2u.github.io/Baier_Binet_Framework/
 
 ## Download
-Get to https://baier2u.github.io/Baier_Binet_Framework/download.php
-and choose download type file to get Framework files.
+Get to https://github.com/baier2u/Baier_Binet_Framework/archive/v1.0.0-beta.zip
