@@ -21,7 +21,7 @@
     <li><a href="alerts.html"> Alerts </a> </li>
     <li><a href="grid.html"> Grid </a> </li>
     <li><a href="list.html"> Lists elements </a> </li>
-    <li><a class="active" href="download.php"> Download </a> </li>
+    <li><a class="active" href="getFramework.php"> Download </a> </li>
 </ul>
 
 <div class="container">
